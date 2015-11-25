@@ -37,7 +37,7 @@ mrlHomeHtml = BeautifulSoup.BeautifulSoup(mrlHomeFile) # content of MRL homepage
 # GET THE LOCATION FOR THE DEAL OF THE DAY #########################################################
 ####################################################################################################
 # find the div with button
-for getDiv in mrlHomeHtml.findAll('div', attrs={"class": "mid_right"}):
+for getDiv in mrlHomeHtml.findAll('div', attrs={"class": "del_cont"}):
 	# first img tag is the deal of the day
 	for getURL in getDiv.findAll('a'):
 		# increment counter
